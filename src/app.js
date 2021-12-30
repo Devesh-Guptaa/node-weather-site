@@ -57,11 +57,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-    // res.send({
-    //     location: req.query.address,
-    //     forecast: "Cloudy",
-    //     temperature: "18"
-    // })
 })
 
 app.get('/help/*', (req, res) => {
