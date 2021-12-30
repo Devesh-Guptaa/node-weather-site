@@ -21,7 +21,7 @@ const forecast = (latitude, longitude, callback) => {
             callback("Coordinates are wrong", undefined)
         }
         else {
-            const Data = "For " + response.body.location.name + " country: " + response.body.location.country + ", " + response.body.current.weather_descriptions[0] + " and temeperature is " + response.body.current.temperature + ". And chances of rain is " + response.body.current.precip + ' %.'
+            const Data = response.body.current.weather_descriptions[0] + " ,temeperature is " + response.body.current.temperature + " but chances of rain is " + response.body.current.precip + ' % only.'
             callback(undefined, Data)
         }
     })
